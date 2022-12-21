@@ -14,7 +14,7 @@ export const getMembers = (id) => {
                 reject("Out of index")
             }
             else{
-                data.imgId = id
+                data[id].imgId = id
                 resolve(data[id])
             }
         })
