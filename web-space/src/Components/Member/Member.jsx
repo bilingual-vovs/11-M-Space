@@ -20,7 +20,10 @@ class Member extends Component {
                     imgUrl: apiUrl + imgPath(data.imgId)
                 })
             })
-            .catch(e => console.error(e))
+            .catch(e => {
+                console.log(e)
+                
+            })
     }
     render() {
         let {imgUrl, name, description} = this.state

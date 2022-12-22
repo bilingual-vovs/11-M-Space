@@ -20,3 +20,17 @@ export const getMembers = (id) => {
         })
     })
 }
+
+export const getAllMembers = () =>{
+    return new Promise((resolve, reject) => {
+        readFile(__dirname + "members.json", "utf-8", (err, data) => {
+            data = JSON.parse(data)
+            if (err){
+                reject(err)
+            }
+            else{
+                resolve(data)
+            }
+        })
+    })
+}

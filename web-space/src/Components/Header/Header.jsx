@@ -11,10 +11,10 @@ class Header extends Component {
                     <div className='inner-head'>
                         <img src={logo} alt="logo"/>
                         <div className='nav'>
-                            <Link className='link'>Дім</Link>
-                            <Link className='link'>Екіпаж</Link>
-                            <Link className='link'>Контакти</Link>
-                            <Link className='link'>О нас</Link>
+                            <Link to="/" className='link'>Дім</Link>
+                            <Link to="/members" className='link'>Екіпаж</Link>
+                            <Link to="/contacts" className='link'>Контакти</Link>
+                            <Link to="/about" className='link'>О нас</Link>
                         </div>
                         <div className='user'>
                             <h2>User Userov</h2>

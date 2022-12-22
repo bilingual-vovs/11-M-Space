@@ -8,6 +8,6 @@ router.use((req, res)=>{
     const id = Number(/\b\d+(?!\w)/.exec(req.url).join())
     exists(resolve(`./images/${id}.jpg`), (img)=>{
         if (img) res.sendFile(resolve(`./images/${id}.jpg`))
-        else res.send("Not found! :(")
+        else res.sendFile(resolve(`./images/NotFound.png`))
     })
 })
