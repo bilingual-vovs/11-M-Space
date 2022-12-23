@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./Header.css"
 import logo from './Logo.png'
+import usrLogo from "./UserLogo.png"
 
 class Header extends Component {
     render() {
@@ -18,6 +19,7 @@ class Header extends Component {
                         </div>
                         <div className='user'>
                             <h2>User Userov</h2>
+                            <img src={usrLogo} alt="usrLogo"/>
                         </div>
                     </div>
                     

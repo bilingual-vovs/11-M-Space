@@ -17,7 +17,8 @@ class Member extends Component {
                 this.setState({
                     name: data.name,
                     description: data.description,
-                    imgUrl: apiUrl + imgPath(data.imgId)
+                    imgUrl: apiUrl + imgPath(data.imgId),
+                    perf: data.perfomance
                 })
             })
             .catch(e => {
@@ -26,18 +27,45 @@ class Member extends Component {
             })
     }
     render() {
-        let {imgUrl, name, description} = this.state
+        let {imgUrl, name, description, perf} = this.state
+
+        let perfsArr = []
+        for (let key in perf){
+            let {points, from, color, imgId} = perf[key]
+            let style = {
+                width: points/from*100 + "%",
+                backgroundColor: color
+            }
+            perfsArr.push(
+                <li key={key} className='part'>
+                    <img className='ico' src={apiUrl + imgPath(imgId)} alt={key} />
+                    <div className='hit-box'>
+                        <span>{points}</span>
+                        <div className='hit-bar'>
+                            <div className='inner-bar' style={style}></div>
+                        </div>
+                    </div>
+                    
+                </li>
+            )
+        }
+
         return (
             <React.Fragment>
                 <Header/>
                 <div className='member'>
                     <div className='container'>
                         <div className='line'>
-                            <img alt={name} src={imgUrl}/>
+                            <img className='photo' alt={name} src={imgUrl}/>
                             <div className='spec-cont'>
                                 <h1>{name}</h1>
                                 <div className='spec'>
-
+                                    <ul className='spec-column'>
+                                        {perfsArr.slice(0, Math.ceil(perfsArr.length/2))}
+                                    </ul>
+                                    <ul className='spec-column'>
+                                        {perfsArr.slice(Math.ceil(perfsArr.length/2), perfsArr.length)}
+                                    </ul>
                                 </div>
                             </div>
                             

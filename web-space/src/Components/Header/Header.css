@@ -22,3 +22,13 @@
 
     color: #FFFBEB;
 }
+
+.user{
+    display: flex;
+    align-items: center;
+    color: #FFFBEB;
+}
+
+.user img {
+    margin-left: 0.5em;
+}
