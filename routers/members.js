@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { getMembers, getAllMembers } from '../DB/getter.js'
-import console from "powered-log"
 import {clientUrl} from "../Settings.js"
 
 export const router = Router()
