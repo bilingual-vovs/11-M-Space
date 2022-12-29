@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { getMembers, getAllMembers } from '../DB/getter.js'
 import console from "powered-log"
+import {clientUrl} from "../Settings.js"
 
 export const router = Router()
 
@@ -10,7 +11,7 @@ router.use((req, res)=>{
         const id = Number(/\b\d+(?!\w)/.exec(req.url).join())
         getMembers(id)
             .then((data)=>{
-                res.setHeader("Access-Control-Allow-Origin", "https://fabulous-crostata-85474d.netlify.app")
+                res.setHeader("Access-Control-Allow-Origin", clientUrl)
                 res.json(data)
             })
             .catch((err)=>{ 
@@ -22,7 +23,7 @@ router.use((req, res)=>{
         getAllMembers()
             .then((data)=>{
                 console.obj(data)
-                res.setHeader("Access-Control-Allow-Origin", "https://fabulous-crostata-85474d.netlify.app")
+                res.setHeader("Access-Control-Allow-Origin", clientUrl)
                 res.json(data)
             })
             .catch((err)=>{ 
