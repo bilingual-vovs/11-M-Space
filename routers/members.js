@@ -10,7 +10,7 @@ router.use((req, res)=>{
         const id = Number(/\b\d+(?!\w)/.exec(req.url).join())
         getMembers(id)
             .then((data)=>{
-                res.setHeader("Access-Control-Allow-Origin", "http://192.168.1.106:3000")
+                res.setHeader("Access-Control-Allow-Origin", "https://fabulous-crostata-85474d.netlify.app")
                 res.json(data)
             })
             .catch((err)=>{ 
@@ -22,7 +22,7 @@ router.use((req, res)=>{
         getAllMembers()
             .then((data)=>{
                 console.obj(data)
-                res.setHeader("Access-Control-Allow-Origin", "http://192.168.1.106:3000")
+                res.setHeader("Access-Control-Allow-Origin", "https://fabulous-crostata-85474d.netlify.app")
                 res.json(data)
             })
             .catch((err)=>{ 
