@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: #251749;
+}
+
+.container{
+    height: 100%;
+    margin: auto;
+}
+
+@media (min-width:1200px) {
+    .container{
+        width: 1100px;
+    }
+}
+
+@media (max-width:1200px) {
+    .container{
+        width: 800px;
+    }
+}
+
+@media (max-width:850px) {
+    .container{
+        width: 500px;
+    }
+}
+@media (max-width:550px) {
+    .container{
+        width: 350px;
+    }
+}

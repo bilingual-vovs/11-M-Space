@@ -1,0 +1,38 @@
+.member-cart{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFBEB;
+    border: solid 2px #495579;
+    border-radius: 20px;
+    padding: 1em;
+    list-style: none;
+} 
+
+.members-line{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.member-link{
+    width: 28%;
+    margin: 0 5% 0 0 ;
+}
+
+.member-cart img {
+    width: 90%;
+    border-radius: 20px;
+    border: solid 2px #495579;;
+}
+.member-cart p {
+    color: #263159;
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 0.5em;
+}
