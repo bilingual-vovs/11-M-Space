@@ -1,0 +1,143 @@
+.loader {
+    margin: 10% 47%;
+    width: 6%;
+}
+
+
+.character{
+    display: flex;
+    align-items: end;
+    margin: 7em 0 1em 0;
+}
+
+.character-photo{
+    width: 160px;
+    border: 3px solid #FFFBEB;
+    border-radius: 20px;
+    margin-right: 1em;
+}
+
+.character-name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+    color: #FFFBEB;
+}
+
+
+.perfomance{
+    display: flex;
+    background: #FFFBEB;
+    border: 3px solid #495579;
+    border-radius: 10px;
+}
+
+.perfomance-column{
+    width: 50%;
+    padding: 0;
+}
+
+.ico{
+    width: 32px;
+    margin: 0 5px 0 0;
+}
+.hit-box{
+    align-items: center;
+    width: 100%;
+}
+
+.inner-bar{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.hit-bar{
+    width: 100%;
+    height: 10px;
+    border: solid 1px #495579;
+    border-radius: 10px;
+}
+
+.part{
+    display: flex;
+    margin: 1em;
+}
+
+
+.description{
+    background: #FFFBEB;
+    border: 2px solid #495579;
+    border-radius: 10px;
+
+    padding: 1em;
+    margin: 1em 0 ;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #495579;
+
+}
+
+.two-column-container{
+    display: flex;
+}
+
+.column{
+    width: 50%;
+    background: #FFFBEB;
+    border: 3px solid #495579;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.heading{
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #495579;
+}
+
+.left{
+    margin-right: 0.5em;
+}
+
+.right{
+    margin-left: 0.5em;
+}
+
+.undefined{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #495579;
+}
+
+.tag{
+    background: #495579;
+    border: 2px solid #263159;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 2px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #FFFBEB;
+}

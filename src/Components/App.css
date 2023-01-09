@@ -1,3 +1,20 @@
 body {
     background-color: #251749;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    height: 100%;
+}
+
+@media (min-width:850px) {
+    .container{
+        width: 840px;
+    }
+}
+
+*{
+    transition-duration: 300ms;
 }
